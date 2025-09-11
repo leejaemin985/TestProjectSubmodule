@@ -1,5 +1,6 @@
 {
   "name": "TestProjectSubmodule.Shared",
+  "roomNameSpace": "TestProjectSubmodule.Shared",
   "autoReferenced": true,
-  "excludePlatforms": ["Editor"]
+  "noEngineReferences": false
 }
