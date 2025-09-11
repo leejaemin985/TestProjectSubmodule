@@ -8,7 +8,5 @@ namespace Addressable
     {
         [Header("Weapon")]
         public Transform weaponParentTransform;
-        public Vector3 weaponLocalPos;
-        public Vector3 weaponLocalRot;
     }
 }

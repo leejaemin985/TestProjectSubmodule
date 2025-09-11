@@ -8,7 +8,14 @@ namespace Addressable
 {
     public class AddressableAsset_WeaponSettingInfo : MonoBehaviour
     {
+        [Header("Equip")]
+        public Vector3 weaponLocalPos;
+        public Vector3 weaponLocalRot;
+
+        [Header("Physics")]
         public PhysicsObject collisionBox;
+
+        [Header("Effect")]
         public ParticleSystem trailParticle;
         public EffectObject slashEffect;
         public EffectObject parringEffect;
