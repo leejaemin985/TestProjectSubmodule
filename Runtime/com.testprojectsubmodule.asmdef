@@ -2,5 +2,6 @@
   "name": "TestProjectSubmodule.Shared",
   "roomNameSpace": "TestProjectSubmodule.Shared",
   "autoReferenced": true,
-  "noEngineReferences": false
+  "noEngineReferences": false,
+  "references": [ "CustomCollision.Runtime" ]
 }
