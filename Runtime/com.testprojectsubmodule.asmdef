@@ -1,0 +1,5 @@
+{
+  "name": "TestProjectSubmodule.Shared",
+  "autoReferenced": true,
+  "excludePlatforms": ["Editor"]
+}
