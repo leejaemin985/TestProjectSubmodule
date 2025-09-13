@@ -9,11 +9,27 @@ namespace Utility.EffectObject
     {
         [SerializeField] private ParticleSystem sparkParticle;
 
+        private IEnumerator effectLifeTimeHandle;
+        private readonly WaitForSeconds LIFE_TIME = new WaitForSeconds(3);
+
         protected override void OnEffect(Action completeListener)
         {
             sparkParticle?.Play();
-            completeListener?.Invoke();
+
+            if (effectLifeTimeHandle!=null) StopCoroutine(effectLifeTimeHandle);
+            StartCoroutine(effectLifeTimeHandle = EffectLifeTime(completeListener));
         }
 
+        protected override void OffEffect()
+        {
+            sparkParticle?.Stop();
+        }
+
+        private IEnumerator EffectLifeTime(Action completeListener)
+        {
+            yield return LIFE_TIME;
+
+            completeListener?.Invoke();
+        }
     }
 }
