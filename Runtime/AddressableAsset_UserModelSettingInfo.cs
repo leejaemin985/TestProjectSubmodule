@@ -8,5 +8,8 @@ namespace Addressable
     {
         [Header("Weapon")]
         public Transform weaponParentTransform;
+
+        [Header("Cam")]
+        public Transform camPos;
     }
 }
