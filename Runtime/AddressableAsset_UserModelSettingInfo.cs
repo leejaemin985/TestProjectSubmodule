@@ -10,6 +10,7 @@ namespace Addressable
         public Transform weaponParentTransform;
 
         [Header("Cam")]
-        public Transform camPos;
+        public Transform defaultCamPos;
+        public Transform actionCamPos;
     }
 }
