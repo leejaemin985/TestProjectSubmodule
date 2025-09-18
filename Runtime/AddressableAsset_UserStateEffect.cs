@@ -7,6 +7,6 @@ namespace Addressable
 {
     public class AddressableAsset_UserStateEffect : MonoBehaviour
     {
-        [SerializeField] private EffectObject roarStateEffect;
+        public EffectObject roarStateEffect;
     }
 }
