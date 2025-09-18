@@ -12,7 +12,7 @@ namespace Utility.EffectObject
             public Transform effectRoot;
         }
 
-        private const int POOL_MIN_SIZE = 5;
+        private const int POOL_MIN_SIZE = 1;
 
         public static EffectObjectPool CreatePoolInstance<T>(T effectObject, PoolingInfo poolingInfo) where T : EffectObject
         {
@@ -41,6 +41,8 @@ namespace Utility.EffectObject
 
                 effectObjects[index] = effectInstace;
                 effectObjects[index].SetActive(false);
+
+                effectObjects[index].Initialize();
             }
         }
 

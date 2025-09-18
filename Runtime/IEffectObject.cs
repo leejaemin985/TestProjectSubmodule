@@ -5,6 +5,8 @@ namespace Utility.EffectObject
 {
     interface IEffectObject
     {
+        public void Initialize();
+
         public bool GetActive();
 
         public void SetActive(bool set);

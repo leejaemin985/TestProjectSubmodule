@@ -7,6 +7,8 @@ namespace Utility.EffectObject
 {
     public abstract class EffectObject : MonoBehaviour, IEffectObject
     {
+        protected virtual void Initialize() { }
+
         protected virtual bool GetActive() { return gameObject.activeSelf; }
 
         protected virtual void SetActive(bool set) { gameObject.SetActive(set); }
@@ -16,6 +18,8 @@ namespace Utility.EffectObject
         protected virtual void OffEffect() { }
 
         #region IEffectObject
+        void IEffectObject.Initialize() => Initialize();
+
         bool IEffectObject.GetActive() => GetActive();
 
         void IEffectObject.SetActive(bool set) => SetActive(set);
