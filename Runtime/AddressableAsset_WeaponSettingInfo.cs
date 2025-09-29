@@ -19,5 +19,8 @@ namespace Addressable
         public ParticleSystem trailParticle;
         public EffectObject slashEffect;
         public EffectObject parringEffect;
+
+        [Header("Sound")]
+        public AudioClip[] whooshSoundClips;
     }
 }
