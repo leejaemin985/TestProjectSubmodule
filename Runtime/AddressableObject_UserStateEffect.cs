@@ -5,7 +5,7 @@ using Utility.EffectObject;
 
 namespace Addressable
 {
-    public class AddressableAsset_UserStateEffect : MonoBehaviour
+    public class AddressableObject_UserStateEffect : MonoBehaviour
     {
         public EffectObject roarStateEffect;
     }

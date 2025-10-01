@@ -6,7 +6,7 @@ using Utility.EffectObject;
 
 namespace Addressable
 {
-    public class AddressableAsset_WeaponSettingInfo : MonoBehaviour
+    public class AddressableObject_WeaponSettingInfo : MonoBehaviour
     {
         [Header("Equip")]
         public Vector3 weaponLocalPos;

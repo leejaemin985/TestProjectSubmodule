@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Addressable
 {
-    public class AddressableAsset_UserModelSettingInfo : MonoBehaviour
+    public class AddressableObject_UserModelSettingInfo : MonoBehaviour
     {
         [Header("Weapon")]
         public Transform weaponParentTransform;

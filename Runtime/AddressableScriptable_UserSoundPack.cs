@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Addressable
 {
-    public class AddressableAsset_UserSoundPack : MonoBehaviour
+    [CreateAssetMenu(fileName = "UserSoundPack", menuName = "Scriptable/AddressableScriptable/UserSoundPack")]
+    public class AddressableScriptable_UserSoundPack : ScriptableObject
     {
         [Header("FSM State")]
         [SerializeField] private AudioClip roarStateSE;
