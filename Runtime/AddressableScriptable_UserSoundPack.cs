@@ -8,6 +8,6 @@ namespace Addressable
     public class AddressableScriptable_UserSoundPack : ScriptableObject
     {
         [Header("FSM State")]
-        [SerializeField] private AudioClip roarStateSE;
+        public AudioClip roarStateSE;
     }
 }

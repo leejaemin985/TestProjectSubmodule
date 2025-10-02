@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 namespace Utility.Sound
 {
     [RequireComponent(typeof(AudioSource))]
-    public abstract class CommonSoundObject<TEnum> : MonoBehaviour where TEnum : Enum
+    public abstract class CommonSoundObject<TEnum> : MonoBehaviour, ISoundObject where TEnum : Enum
     {
         private bool initialized = false;
         private AudioSource audioSource = default;
