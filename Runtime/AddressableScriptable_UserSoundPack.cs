@@ -9,5 +9,8 @@ namespace Addressable
     {
         [Header("FSM State")]
         public AudioClip[] roarStateSE;
+        public AudioClip[] walkStateSE;
+        public AudioClip[] sprintStateSE;
+
     }
 }
