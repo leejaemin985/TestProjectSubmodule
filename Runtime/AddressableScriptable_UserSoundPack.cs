@@ -11,6 +11,7 @@ namespace Addressable
         public AudioClip[] roarStateSE;
         public AudioClip[] walkStateSE;
         public AudioClip[] sprintStateSE;
+        public AudioClip[] landStateSE;
 
     }
 }
