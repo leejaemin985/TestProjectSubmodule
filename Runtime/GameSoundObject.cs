@@ -8,6 +8,6 @@ namespace Utility.Sound
 
     public abstract class GameSoundObject : CommonSoundObject<SoundType>
     {
-
+        protected override float spatialBlendSetting => .9f;
     }
 }

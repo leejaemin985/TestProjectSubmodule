@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Codice.CM.Common;
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -9,6 +10,7 @@ namespace Utility.Sound
     {
         private bool initialized = false;
         private AudioSource audioSource = default;
+        protected virtual float spatialBlendSetting => 1f;
 
         public AudioSource Audio
         {
@@ -18,6 +20,7 @@ namespace Utility.Sound
                 if (audioSource == null)
                 {
                     audioSource = GetComponent<AudioSource>();
+                    audioSource.spatialBlend = spatialBlendSetting;
                 }
                 return audioSource;
             }
