@@ -12,6 +12,7 @@ namespace Addressable
         public AudioClip[] walkStateSE;
         public AudioClip[] sprintStateSE;
         public AudioClip[] landStateSE;
+        public AudioClip[] userHitSE;
 
     }
 }
