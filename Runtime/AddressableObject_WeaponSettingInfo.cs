@@ -22,5 +22,6 @@ namespace Addressable
 
         [Header("Sound")]
         public AudioClip[] whooshSoundClips;
+        public AudioClip[] collisionSoundClips;
     }
 }
