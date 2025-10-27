@@ -22,5 +22,13 @@ namespace Utility.Sound
                 return instance;
             }
         }
+
+        public float GetBGMVolume() => GetMixerGroupVolume(SoundType.BGM);
+        public float GetEffectVolume() => GetMixerGroupVolume(SoundType.Effect);
+
+        public void SetBGMVolume(float volume) => SetMixerGroupVolume(SoundType.BGM, volume);
+        public void SetEffectVolume(float volume) => SetMixerGroupVolume(SoundType.Effect, volume);
+
+
     }
 }
