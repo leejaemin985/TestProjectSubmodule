@@ -8,5 +8,6 @@ namespace Addressable
     public class AddressableObject_UserStateEffect : MonoBehaviour
     {
         public EffectObject roarStateEffect;
+        public EffectObject hitStateSparkEffect;
     }
 }
