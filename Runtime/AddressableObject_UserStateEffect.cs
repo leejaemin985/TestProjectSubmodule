@@ -9,5 +9,7 @@ namespace Addressable
     {
         public EffectObject roarStateEffect;
         public EffectObject hitStateSparkEffect;
+        public EffectObject deathStateBloodEffect;
+
     }
 }
